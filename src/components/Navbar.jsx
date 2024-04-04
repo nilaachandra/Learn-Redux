@@ -14,9 +14,9 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex items-center">
-          <Link to="/cartpage" className="text-gray-300 hover:text-white mr-4">
+          <Link to="/cartpage" className="text-gray-300 hover:text-white mr-4 relative">
             <RiShoppingCartFill size={30} />
-            <span>{cartCount.length}</span>
+            <span className="absolute h-6 w-6 flex items-center justify-center bg-red-600 text-white font-bold rounded-full -top-2 left-4" >{cartCount.length}</span>
           </Link>
           <Link to="/dashboard" className="text-gray-300 hover:text-white mr-4">
             <RiDashboard2Fill size={30} />
